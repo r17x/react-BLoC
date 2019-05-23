@@ -1,0 +1,59 @@
+{
+  "name": "react-bloc",
+  "description": "An Example Implement BLOC in ReactJS",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-scripts": "3.0.1",
+    "rxjs": "^6.5.2"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "test:staged": "cross-env CI=true react-scripts test --env=jsdom --coverage --findRelatedTests",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "jest": {
+    "collectCoverageFrom": [
+      "src/**/*.{js,jsx,ts,tsx}",
+      "!<rootDir>/node_modules/",
+      "!**/__test__/utils/**",
+      "!**/{__stories__,__mocks__}/**"
+    ]
+  },
+  "devDependencies": {
+    "cross-env": "^5.2.0",
+    "eslint-config-prettier": "4.3.0",
+    "eslint-plugin-jest": "22.6.4",
+    "eslint-plugin-prettier": "3.1.0",
+    "eslint-plugin-react": "7.13.0",
+    "husky": "2.3.0",
+    "jest-dom": "3.3.0",
+    "lint-staged": "8.1.7",
+    "prettier": "1.17.1",
+    "react-testing-library": "7.0.1"
+  }
+}
