@@ -14,7 +14,9 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "test:staged": "cross-env CI=true react-scripts test --env=jsdom --coverage --findRelatedTests",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "deploy": "yarn build && gh-pages -d build",
+    "deploy:travis": "gh-pages-with-token -d build"
   },
   "eslintConfig": {
     "extends": "react-app"
